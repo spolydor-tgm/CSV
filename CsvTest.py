@@ -1,7 +1,7 @@
 import unittest
 
-from src.CSV.Csv import Csv
-
+from Csv import Csv
+# src.CSV.
 class CSVtest(unittest.TestCase):
 #test
     def setUp(self):
