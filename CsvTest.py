@@ -1,7 +1,6 @@
 import unittest
 
-from Csv import Csv
-#src.CSV.
+from src.CSV.Csv import Csv
 
 class CSVtest(unittest.TestCase):
 #test
@@ -13,10 +12,7 @@ class CSVtest(unittest.TestCase):
          self.cc.read()
 
     def test_load2(self):
-        try:
-            self.assertRaises(FileNotFoundError, self.c.read())
-        except FileNotFoundError as e:
-            self.fail("CSV-file?\n %s" % e)
+        self.assertRaises(FileNotFoundError, self.c.read())
 
     def test_load3(self):
         try:
