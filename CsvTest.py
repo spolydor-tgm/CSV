@@ -11,7 +11,7 @@ class CSVtest(unittest.TestCase):
     def test_load(self):
         try:
             self.c.read()
-        except FileNotFoundError as e:
+        except AssertionError as e:
             self.fail("Where is the CSV-file?\n %s" % e)
 
 
