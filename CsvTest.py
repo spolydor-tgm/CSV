@@ -1,6 +1,6 @@
 import unittest
 
-from src.CSV.Csv import Csv
+import Csv
 
 
 class CSVtest(unittest.TestCase):
